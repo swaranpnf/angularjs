@@ -13,7 +13,7 @@
  * @license   http://www.opensource.org/licenses/mit-license.php MIT License
  */
 namespace App\Controller;
-
+die('sdchvs');
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 
