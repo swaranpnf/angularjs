@@ -1,1 +1,4 @@
-<div class="message error" onclick="this.classList.add('hidden');"><?= h($message) ?></div>
+<div class="notify notify-error">
+    <a class="close" href="javascript:;">&times;</a>
+    <p><?= h($message) ?></p>
+</div>

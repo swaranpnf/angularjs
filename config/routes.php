@@ -48,13 +48,13 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-    $routes->connect('/', ['controller' => 'homes', 'action' => 'index','prefix'=>'webadmin',TRUE]);
+    $routes->connect('/',[
+        'controller'=>'frontend',
+        'action'=>'login',
+     
+        ]);
 //    $routes->connect('/webadmin', ['controller' => 'dashboard', 'action' => 'index','prefix'=>'webadmin',TRUE]);
-//    $routes->connect('/webadmin/', ['controller' => 'dashboard', 'action' => 'login','prefix'=>'webadmin',TRUE]);
-//    $routes->connect('/webadmin/login', ['controller' => 'users', 'action' => 'login','prefix'=>'webadmin','webadmin'=>TRUE,'_ext' => null]);
-    
-    
-//    $routes->connect('/', ['controller' => 'Pages', 'action' => 'display', 'home']);
+
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
@@ -73,15 +73,16 @@ Router::scope('/', function (RouteBuilder $routes) {
      * - InflectedRoute
      * - Route
      * - Or your own route class
-     *
      * You can remove these routes once you've connected the
      * routes you want in your application.
      */
     $routes->fallbacks('DashedRoute');
 });
-Router::prefix('webadmin', ['_namePrefix' => 'webadmin:'], function ($routes) {
-       $routes->connect('/login',array('controller' => 'users', 'action' => 'login'));
-});
+//Router::prefix('webadmin', ['_namePrefix' => 'webadmin:'], function ($routes) {
+//       $routes->connect('/login',array('controller' => 'users', 'action' => 'login'));
+//       $routes->connect('/dashboard',array('controller' => 'dashboard', 'action' => 'index'));
+//       $routes->fallbacks('DashedRoute');
+//});
 
 /**
  * Load all plugin routes.  See the Plugin documentation on

@@ -220,3 +220,10 @@ Type::build('date')
 Type::build('datetime')
     ->useImmutable()
     ->useLocaleParser();
+define('BASE_URL', 'http://localhost/latest_cake/');
+define('ADMIN_URL', 'http://localhost/latest_cake/webadmin/');
+define('IMAGE_PATH', '/var/www/reverseadvisor.picnframes.info/web');
+define('CONTACT_EMAIL', 'answers@reverseadvisor.com');
+
+define('WP_MEMORY_LIMIT', '10G');
+ini_set('memory_limit', '128M');

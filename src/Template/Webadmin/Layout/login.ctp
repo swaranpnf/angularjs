@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />		
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <?php echo $this->Html->css(array('login', 'reset', 'text', 'buttons', 'theme-default')); ?>
+        <?php echo $this->Html->css(array('login', 'reset', 'text', 'buttons', 'theme-default','all')); ?>
     </head>
     <body>
         <?php echo $this->fetch('content'); ?> 
